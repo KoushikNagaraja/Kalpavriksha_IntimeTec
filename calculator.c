@@ -24,7 +24,8 @@ int evaluateexpression(const char *character)
     {
         if(isspace(character[i]))
         {
-            i++;continue;
+            i++;
+            continue;
         }
         if(isdigit(character[i]))
         {
@@ -77,5 +78,5 @@ int main()
     fgets(input,sizeof(input),stdin);
     int result=evaluateexpression(input);
     printf("%d",result);
-    return 0;
+    return 0; 
 }
